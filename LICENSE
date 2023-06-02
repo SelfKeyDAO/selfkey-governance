@@ -1,0 +1,60 @@
+Copyright SelfKey DAO Foundation 2023. All rights reserved.
+
+OWNERSHIP
+
+You expressly acknowledge, affirm, and agree that SelfKey DAO Foundation ("SelfKey"), or its licensors, as the case may be, is the sole and exclusive owner of all legal right, title, and interest in and to the software, source code, technical documentation, related algorithms, graphical user interfaces, graphical designs, architectures, structures, underlying technology, and any other materials contained in this repository, or any associated documentation, software, or code published or made available on any other platform or medium (collectively, the "Program"). The Program includes, but is not limited to, all works of authorship, inventions, discoveries, improvements, methods, processes, formulas, designs, techniques, and information, whether or not patentable or registrable under copyright or similar laws, and whether in written, electronic, coded or any other form. This ownership extends to all languages, formats, and platforms and covers all Intellectual Property Rights.
+
+"Intellectual Property Rights" means any and all rights existing from time to time under patent law, copyright law, trade secret law, trademark law, unfair competition law, and any and all other proprietary rights worldwide. It also includes all applications, renewals, extensions and restorations thereof, now or hereafter in force and effect. The ownership of SelfKey applies regardless of whether such Intellectual Property Rights are registered or unregistered, and wherever in the world those rights may exist. You also acknowledge that the Program contains proprietary information that is protected by applicable intellectual property and other laws, including but not limited to copyright.
+
+PROHIBITION
+
+Except as expressly permitted by this License or by applicable law, and without limiting the generality of the foregoing, you are expressly prohibited from, and shall not permit any third party to: distribute, transmit, publish, copy, modify, adapt, translate, prepare derivative works from, merge, combine with another program, incorporate into or on another product, offer for sale, sell, transfer, rent, lease, loan, export or re-export, reverse assemble, reverse engineer, decompile, disassemble, or otherwise attempt to derive the source code (if applicable regarding deriving the source code) of the Program, or any part thereof (the "Prohibition").
+
+This Prohibition extends to any action intended to extract any proprietary information, including but not limited to algorithms, protocols, structures, ideas, principles, or elements contained in the Program, whether for your own use, for transfer to a third party, or for the creation of products or services that compete with or otherwise infringe upon the rights of SelfKey, its licensors, or the Program. Furthermore, you shall not remove, alter, cover, or distort any copyright, trademark, or other proprietary rights notice on the Program or accompanying materials, and you shall not aid, abet, encourage, or induce any third party, directly or indirectly, to commit any of the acts described in this paragraph. Any attempt to do so is a violation of the rights of SelfKey and its licensors.
+
+Under the Prohibition, you are expressly prohibited from using any trademark, service mark, trade name, logo, insignia, domain name, or any other distinguishing branding elements or intellectual property ("Marks") belonging to SelfKey, its licensors, or any other company or organization. The Prohibition applies, but is not limited to, instances where such use is likely or intended to cause confusion, deception, or misunderstanding about the identity, affiliation, connection, association, origin, sponsorship, endorsement, authorization, approval, or any relationship of any kind between you and the owner, authorized user, or other legally recognized party related to such Marks.
+
+You may not use the Marks in a manner that tarnishes, degrades, disparages, or dilutes the quality associated with the Marks or the goods or services to which the Marks pertain. You may not use the Marks in any manner that infringes or encroaches upon the rights of SelfKey or any third party. Further, you may not use the Marks in any way in conjunction with content that is defamatory, scandalous, inflammatory, pornographic, profane, or in any manner that could damage or harm the reputation or goodwill associated with the Marks or their respective owners.
+
+The Prohibition extends to the use of any Marks in any meta tags, keywords, or hidden text; using the Marks in any domain names, email addresses, or social media handles or identifiers; or registering, attempting to register, or assisting others in registering any Marks or names that are in any way similar to the Marks. Any unauthorized use of the Marks or any similarly confusing elements may constitute an infringement of SelfKey's or other rightful owners' valuable intellectual property rights, and may result in legal action.
+
+LICENSE
+
+SelfKey grants you a non-exclusive, non-transferable, non-sublicensable license to view, study, review, and scrutinize the Program and to submit pull requests to SelfKey to propose improvements or fixes (collectively, the "Permitted Uses") solely for Non-Commercial Use. Without limiting the Prohibitions, for the avoidance of doubt, the Permitted Uses do not include the right to distribute, publish, copy, modify, merge, combine with another program, or create derivative works of the Program.
+
+When undertaking the Permitted Uses, you must:
+
+Provide clear and conspicuous notice ("Notice") that the Program is being used under License from SelfKey and that the Program is the copyright of SelfKey; and
+Ensure that the use of the Program, and any improvements or fixes proposed via a pull request, are for Non-Commercial Use and are subject to the same Notice requirement set forth herein.
+
+For the purpose of this License, "Non-Commercial Use" is defined as viewing, studying, reviewing, or scrutinizing the Program in a way that does not result in financial gain, directly or indirectly. Non-Commercial Use excludes any usage that leads to commercial advantage, private monetary compensation, or any monetization or commercialization activity. Determining what constitutes Non-Commercial Use rests solely at the discretion of SelfKey.
+
+MISCELLANEOUS
+
+Failure to comply with any of the terms of this License will result in immediate revocation of your rights under this License.
+
+THE PROGRAM IS PROVIDED TO YOU ON AN 'AS IS' AND 'AS AVAILABLE' BASIS, WITHOUT ANY REPRESENTATIONS, WARRANTIES, COVENANTS, OR GUARANTEES WHATSOEVER, TO THE FULLEST EXTENT PERMISSIBLE UNDER APPLICABLE LAW. SELFKEY, ITS AFFILIATES, LICENSORS, AND SERVICE PROVIDERS EXPRESSLY DISCLAIM ALL WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE. THIS INCLUDES, WITHOUT LIMITATION, WARRANTIES OR CONDITIONS OF MERCHANTABILITY, SATISFACTORY QUALITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, QUIET ENJOYMENT, SYSTEM INTEGRATION, NON-INFRINGEMENT OF INTELLECTUAL PROPERTY RIGHTS, AND ANY WARRANTIES ARISING OUT OF COURSE OF DEALING, USAGE, OR TRADE.
+
+SELFKEY MAKES NO WARRANTY THAT THE PROGRAM WILL MEET YOUR REQUIREMENTS, ACHIEVE ANY INTENDED RESULTS, BE COMPATIBLE, OR WORK WITH ANY OTHER SOFTWARE, APPLICATIONS, SYSTEMS, OR SERVICES, OPERATE WITHOUT INTERRUPTION, MEET ANY PERFORMANCE OR RELIABILITY STANDARDS, BE ERROR-FREE, OR THAT ANY ERRORS OR DEFECTS CAN OR WILL BE CORRECTED.
+
+IN NO EVENT SHALL SELFKEY BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, PUNITIVE, CONSEQUENTIAL, OR EXEMPLARY DAMAGES, INCLUDING BUT NOT LIMITED TO DAMAGES FOR LOSS OF PROFITS, GOODWILL, USE, DATA, OR OTHER INTANGIBLE LOSSES (EVEN IF SELFKEY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES), RESULTING FROM THE USE OR INABILITY TO USE THE PROGRAM.
+
+USAGE OF THIRD-PARTY COMPONENTS
+
+The Program may incorporate specific software components or lines of code ("Components") owned by zOS Global Limited and contributors. The use of these Components (if any) is subject to their respective licenses. Please refer to the license below for detailed terms and conditions.
+
+"The MIT License (MIT)
+
+Copyright (c) 2016-2023 zOS Global Limited and contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+
+Please note that the fulfillment of obligations to include initial copyright notices associated with third-party Components does not limit or restrict the provisions of this License granted by SelfKey to the extent permitted under applicable laws. Subject to the constraints of relevant law, SelfKey retains all its rights as stipulated in this License, notwithstanding any requirements arising from the use of third-party Components.
+
+If you have any questions, comments, or interest in pursuing other use cases, please contact us at Selfkeydao@proton.me.

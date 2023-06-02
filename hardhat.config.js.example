@@ -1,0 +1,33 @@
+require("@nomiclabs/hardhat-waffle");
+require('@nomiclabs/hardhat-ethers');
+require('@openzeppelin/hardhat-upgrades');
+
+// Go to https://www.alchemyapi.io, sign up, create
+// a new App in its dashboard, and replace "KEY" with its key
+const ALCHEMY_API_KEY = "";
+
+// To export your private key from Metamask, open Metamask and
+// go to Account Details > Export Private Key
+// Be aware of NEVER putting real Ether into testing accounts
+const PRIVATE_KEY = "";
+
+const POLYGONSCAN_API_KEY = '';
+
+/**
+ * @type import('hardhat/config').HardhatUserConfig
+ */
+module.exports = {
+  solidity: "0.8.9",
+  networks: {
+    mumbai: {
+      url: `https://polygon-mumbai.g.alchemy.com/v2/${ALCHEMY_API_KEY}`,
+      accounts: [`${PRIVATE_KEY}`]
+    }
+  },
+  etherscan: {
+    apiKey: {
+      polygonMumbai: `${POLYGONSCAN_API_KEY}`,
+      polygon: `${POLYGONSCAN_API_KEY}`
+    }
+  }
+};
