@@ -5,9 +5,10 @@ async function main() {
     console.log("Deploying contracts with the account:", deployer.address);
 
     const contractFactory = await hre.ethers.getContractFactory("SelfkeyGovernance");
-    const contract = await contractFactory.deploy();
+    const contract = await upgrades.deployProxy(contractFactory, []);
+    await contract.deployed();
 
-    console.log("Deployed Rewards Registry contract address:", contract.address);
+    console.log("Deployed contract address:", contract.address);
 
     // INFO: verify contract after deployment
     // npx hardhat verify --network mumbai 0x076c1B1758A77F5f51Ef2616e97d00fC6350A8Bc
