@@ -1,4 +1,4 @@
-# Selfkey Governance contract
+# Selfkey Governance Contract
 
 ## Overview
 
