@@ -1,7 +1,8 @@
 # Selfkey Governance Contract
 
 ## Overview
-
+Selfkey DAO Governance Smart Contract.
+Governance settings for Selfkey ID reliance flow.
 
 ## Development
 
