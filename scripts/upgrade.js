@@ -4,14 +4,17 @@ async function main() {
     const [deployer] = await ethers.getSigners();
     console.log("Deploying contracts with the account:", deployer.address);
 
+    const proxyAddress = "0x2cfEa17cFD338a0aA9D358F2bfD8e78dFf39e4be";
+
     const contractFactory = await hre.ethers.getContractFactory("SelfkeyGovernance");
-    const contract = await upgrades.deployProxy(contractFactory, [], { timeout: 300000 });
+    const contract = await upgrades.upgradeProxy(proxyAddress, contractFactory);
     await contract.deployed();
 
     console.log("Deployed contract address:", contract.address);
 
+
     // INFO: verify contract after deployment
-    // npx hardhat verify --network mumbai 0x8860868aE39c8690B49451E9bcE3EB884FF79B68
+    // npx hardhat verify --network mumbai 0x2cfEa17cFD338a0aA9D358F2bfD8e78dFf39e4be
 }
 
 main()

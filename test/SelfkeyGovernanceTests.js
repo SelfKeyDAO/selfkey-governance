@@ -42,4 +42,18 @@ describe("Selfkey Governance Tests", function () {
                 .to.be.revertedWith('Ownable: caller is not the owner');
         });
     })
+
+    describe("Governance payment functions", function() {
+        it("Owner should be able to set a address setting", async function() {
+            await expect(contract.connect(owner).updatePaymentCurrency('KEY', '0x4261EB067773a28913F8504648dBA48F7955D572', 18, '1200000000000000000000', false, true, 0, { from: owner.address }))
+                .to.emit(contract, 'PaymentCurrencyUpdated')
+
+            await expect(contract.connect(owner).updatePaymentCurrency('KEY', '0xb52df1c38fa1864860f26df059e02e2d087e448f', 18, '1200000000000000000000', false, true, 0, { from: owner.address }))
+                .to.emit(contract, 'PaymentCurrencyUpdated')
+
+
+            const currencies = (await contract.getCurrencies());
+            console.log(currencies);
+        });
+    })
 });

@@ -39,7 +39,7 @@ contract SelfkeyGovernance is ISelfkeyGovernance, Initializable, OwnableUpgradea
 
     function getCurrencies() external view returns (PaymentCurrency[] memory) {
         uint _count = _currencyEntries.length;
-        PaymentCurrency[] memory _activeCurrencies = new PaymentCurrency[](6);
+        PaymentCurrency[] memory _activeCurrencies = new PaymentCurrency[](_count);
         for(uint i=0; i<_count; i++) {
             PaymentCurrency memory record = _currencies[_currencyEntries[i]];
              _activeCurrencies[i] = record;
