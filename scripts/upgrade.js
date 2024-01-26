@@ -7,11 +7,10 @@ async function main() {
     const proxyAddress = "0x2cfEa17cFD338a0aA9D358F2bfD8e78dFf39e4be";
 
     const contractFactory = await hre.ethers.getContractFactory("SelfkeyGovernance");
-    const contract = await upgrades.upgradeProxy(proxyAddress, contractFactory);
+    const contract = await upgrades.upgradeProxy(proxyAddress, contractFactory, { timeout: 500000 });
     await contract.deployed();
 
     console.log("Deployed contract address:", contract.address);
-
 
     // INFO: verify contract after deployment
     // npx hardhat verify --network mumbai 0x2cfEa17cFD338a0aA9D358F2bfD8e78dFf39e4be

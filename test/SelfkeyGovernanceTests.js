@@ -4,7 +4,7 @@ const { ethers, upgrades } = require("hardhat");
 describe("Selfkey Governance Tests", function () {
 
     let contract;
-    let authContract;
+    let contractV1;
 
     let owner;
     let addr1;
@@ -18,9 +18,12 @@ describe("Selfkey Governance Tests", function () {
     beforeEach(async function () {
         [owner, addr1, addr2, receiver, signer, ...addrs] = await ethers.getSigners();
 
-        const govContractFactory = await ethers.getContractFactory("SelfkeyGovernance");
-        contract = await upgrades.deployProxy(govContractFactory, []);
-        await contract.deployed();
+        const govContractFactory = await ethers.getContractFactory("SelfkeyGovernanceV1");
+        contractV1 = await upgrades.deployProxy(govContractFactory, []);
+        await contractV1.deployed();
+
+        let factory2 = await ethers.getContractFactory("SelfkeyGovernance");
+        contract = await upgrades.upgradeProxy(contractV1.address, factory2);
     });
 
     describe("Deployment", function() {
