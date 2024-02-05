@@ -58,5 +58,6 @@ describe("Selfkey Governance Tests", function () {
             const currencies = (await contract.getCurrencies());
             console.log(currencies);
         });
-    })
+    });
+
 });

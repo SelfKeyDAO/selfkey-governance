@@ -4,6 +4,7 @@ pragma solidity 0.8.19;
 import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
 import "./ISelfkeyGovernance.sol";
+import "./external/ISelfkeyDaoVoting.sol";
 
 contract SelfkeyGovernance is ISelfkeyGovernance, Initializable, OwnableUpgradeable  {
 
@@ -16,6 +17,8 @@ contract SelfkeyGovernance is ISelfkeyGovernance, Initializable, OwnableUpgradea
     mapping(uint256 => bytes32) public data;
 
     mapping(uint256 => Coupons) public coupons;
+
+    ISelfkeyDaoVoting public daoVotingContract;
 
     /// @custom:oz-upgrades-unsafe-allow constructor
     constructor() {
@@ -81,8 +84,8 @@ contract SelfkeyGovernance is ISelfkeyGovernance, Initializable, OwnableUpgradea
         return false;
     }
 
-    function setCoupon(string memory _coupon, uint256 _discount, uint256 _amount, uint256 _expiry, bool _active, address _wallet, address _affiliateWallet, uint256 _affiliateShare) public onlyOwner {
-        coupons[uint256(keccak256(abi.encodePacked(_coupon)))] = Coupons(_coupon, _discount, _amount, _expiry, _active, _wallet, _affiliateWallet, _affiliateShare);
+    function setCoupon(string memory _coupon, uint256 _discount, uint256 _expiry, bool _active, address _wallet, address _affiliateWallet, uint256 _affiliateShare) public onlyOwner {
+        coupons[uint256(keccak256(abi.encodePacked(_coupon)))] = Coupons(_coupon, _discount, 0, _expiry, _active, _wallet, _affiliateWallet, _affiliateShare);
     }
 
     function getCoupon(string memory _coupon) public view returns (Coupons memory) {
@@ -105,5 +108,17 @@ contract SelfkeyGovernance is ISelfkeyGovernance, Initializable, OwnableUpgradea
             }
         }
         return _coupon;
+    }
+
+    function setDaoVotingContractAddress(address _newDaoVotingContractAddress) public onlyOwner {
+        daoVotingContract = ISelfkeyDaoVoting(_newDaoVotingContractAddress);
+    }
+
+    function isSelfMintingUnlocked() public view returns (bool) {
+        uint256 _votingProposalId = numbers[0];
+        uint256 _selfUnlockLimit = numbers[1];
+        uint256 _numberOfVotes = daoVotingContract.getVoteCount(_votingProposalId);
+
+        return _numberOfVotes >= _selfUnlockLimit;
     }
 }
