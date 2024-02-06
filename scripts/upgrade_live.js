@@ -14,7 +14,7 @@ async function main() {
 
 
     // INFO: verify contract after deployment
-    // npx hardhat verify --network mumbai 0x8860868aE39c8690B49451E9bcE3EB884FF79B68
+    // npx hardhat verify --network polygon 0x8860868aE39c8690B49451E9bcE3EB884FF79B68
 }
 
 main()
