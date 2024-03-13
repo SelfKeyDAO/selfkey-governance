@@ -1,0 +1,215 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0xbD76D90FD37023B32644B76D2434b01da5865Ba2",
+    "txHash": "0xa02d22936c0fe17daf1fafd1106a58859aa81fd7ba17208a9466191b2537b384"
+  },
+  "proxies": [
+    {
+      "address": "0x976913906CAC2F3b0B784E811f87F64528C56B90",
+      "txHash": "0xf75b1f61ae8c68bf9fbd69df5a67164983704dadf34e2678d49770f9f2a265a0",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "a27e151e6c5cce01d9718e6cd872dc1eafe80ea5c4a31da2318f254afd601c2d": {
+      "address": "0xBFF949340691778d1B3C0b1C67eD0d0815985619",
+      "txHash": "0xf3f133ac5807ac69c1e5ea6c38506c2ab39c4982784a44ebf24fe60b6e904049",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:94"
+          },
+          {
+            "label": "entryFeeStatus",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_bool",
+            "contract": "SelfkeyGovernance",
+            "src": "contracts/SelfkeyGovernance.sol:10"
+          },
+          {
+            "label": "_currencies",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_mapping(t_address,t_struct(PaymentCurrency)584_storage)",
+            "contract": "SelfkeyGovernance",
+            "src": "contracts/SelfkeyGovernance.sol:11"
+          },
+          {
+            "label": "_currencyEntries",
+            "offset": 0,
+            "slot": "103",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "SelfkeyGovernance",
+            "src": "contracts/SelfkeyGovernance.sol:12"
+          },
+          {
+            "label": "addresses",
+            "offset": 0,
+            "slot": "104",
+            "type": "t_mapping(t_uint256,t_address)",
+            "contract": "SelfkeyGovernance",
+            "src": "contracts/SelfkeyGovernance.sol:14"
+          },
+          {
+            "label": "numbers",
+            "offset": 0,
+            "slot": "105",
+            "type": "t_mapping(t_uint256,t_uint256)",
+            "contract": "SelfkeyGovernance",
+            "src": "contracts/SelfkeyGovernance.sol:15"
+          },
+          {
+            "label": "data",
+            "offset": 0,
+            "slot": "106",
+            "type": "t_mapping(t_uint256,t_bytes32)",
+            "contract": "SelfkeyGovernance",
+            "src": "contracts/SelfkeyGovernance.sol:16"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_struct(PaymentCurrency)584_storage)": {
+            "label": "mapping(address => struct PaymentCurrency)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_address)": {
+            "label": "mapping(uint256 => address)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_bytes32)": {
+            "label": "mapping(uint256 => bytes32)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_uint256)": {
+            "label": "mapping(uint256 => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(PaymentCurrency)584_storage": {
+            "label": "struct PaymentCurrency",
+            "members": [
+              {
+                "label": "name",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "tokenAddress",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "decimals",
+                "type": "t_uint8",
+                "offset": 20,
+                "slot": "1"
+              },
+              {
+                "label": "amount",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "native",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "active",
+                "type": "t_bool",
+                "offset": 1,
+                "slot": "3"
+              },
+              {
+                "label": "discount",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              }
+            ],
+            "numberOfBytes": "160"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    }
+  }
+}

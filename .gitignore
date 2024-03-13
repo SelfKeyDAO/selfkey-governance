@@ -14,5 +14,4 @@ local/
 
 private_key.txt
 hardhat.config.js
-.openzeppelin
 *.code-workspace

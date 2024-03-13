@@ -2,7 +2,7 @@
 
 ## Overview
 Selfkey DAO Governance Smart Contract.
-Governance settings for Selfkey ID reliance flow.
+Governance settings for Selfkey DAO reliance flow.
 
 ## Development
 
@@ -21,8 +21,8 @@ All smart contracts are implemented in Solidity `^0.8.19`, using [Hardhat](https
 
     `npx hardhat test`
 
-### Deploy
+## Contributing
+Please see the [contributing notes](CONTRIBUTING.md).
 
-    `npx hardhat run scripts/deploy.js --network mumbai`
-    `npx hardhat verify --network mumbai 0x0Ad5B4b01f56117fB480363117a951c12b231c03`
-
+## Copyright
+Copyright SelfKey DAO Foundation 2024. All rights reserved.
