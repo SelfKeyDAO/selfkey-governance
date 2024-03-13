@@ -115,6 +115,9 @@ contract SelfkeyGovernance is ISelfkeyGovernance, Initializable, OwnableUpgradea
     }
 
     function isSelfMintingUnlocked() public view returns (bool) {
+        if (daoVotingContract == ISelfkeyDaoVoting(address(0))) {
+            return false;
+        }
         uint256 _votingProposalId = numbers[0];
         uint256 _selfUnlockLimit = numbers[1];
         uint256 _numberOfVotes = daoVotingContract.getVoteCount(_votingProposalId);
